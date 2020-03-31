@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.quinnipiac.currency.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/conversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Enter The Currency you would Like to Exchange using the Shortened Experssion. (E.X. USD, EUR) and the amount."
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="USD" />
+
+        <TextView
+            android:id="@+id/amountenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter The Amount you wish to convert."
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/amount2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TO:"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/currency2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="EUR" />
+
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Convert" />
+    </LinearLayout>
+
+</FrameLayout>
